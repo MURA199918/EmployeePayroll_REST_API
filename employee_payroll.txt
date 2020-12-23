@@ -64,3 +64,30 @@ C:\WorkSpace>curl -X GET -H "Content-Type: application/json" "http://localhost:3
     "id": 4
   }
 ]
+
+#Custom Routes
+
+C:\WorkSpace>curl -X GET -H "Content-Type: application/json" "http://localhost:4000/employees/list"
+[
+  {
+    "id": 1,
+    "name": "abc",
+    "salary": 2000
+  },
+  {
+    "name": "Priya",
+    "salary": "8000",
+    "id": 3
+  },
+  {
+    "name": "murali",
+    "salary": 2000,
+    "id": 4
+  }
+]
+C:\WorkSpace>curl -X GET -H "Content-Type: application/json" "http://localhost:4000/employees/get/1"
+{
+  "id": 1,
+  "name": "abc",
+  "salary": 2000
+}
