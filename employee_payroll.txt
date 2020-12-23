@@ -1,0 +1,6 @@
+C:\WorkSpace> curl -X POST -H "Content-Type: application/json" -d"{\"name\":\"Priya\",\"salary\":\"5000\"}" "http://localhost:3000/employees"
+{
+  "name": "Priya",
+  "salary": "5000",
+  "id": 5
+}
