@@ -1,6 +1,17 @@
+#UC1  Add new Employee to JSON Server
+
 C:\WorkSpace> curl -X POST -H "Content-Type: application/json" -d"{\"name\":\"Priya\",\"salary\":\"5000\"}" "http://localhost:3000/employees"
 {
   "name": "Priya",
   "salary": "5000",
   "id": 5
+}
+
+#UC3  Update Employee details to JSON Server
+
+C:\WorkSpace>curl -XPUT -H "Content-Type: application/json" -d "{\"name\":\"Priya\",\"salary\":\"8000\"}" "http://localhost:3000/employees/3"
+{
+  "name": "Priya",
+  "salary": "8000",
+  "id": 3
 }
