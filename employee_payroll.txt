@@ -41,3 +41,26 @@ C:\WorkSpace>curl -X GET -H "Content-Type: application/json" "http://localhost:3
     "id": 5
   }
 ]
+
+#UC5  delete Employee details from payroll service in JSON server
+
+C:\WorkSpace>curl -X DELETE -H "Content-Type: application/json" "http://localhost:3000/employees/5"
+{}
+C:\WorkSpace>curl -X GET -H "Content-Type: application/json" "http://localhost:3000/employees"
+[
+  {
+    "id": 1,
+    "name": "abc",
+    "salary": 2000
+  },
+  {
+    "name": "Priya",
+    "salary": "8000",
+    "id": 3
+  },
+  {
+    "name": "murali",
+    "salary": 2000,
+    "id": 4
+  }
+]
